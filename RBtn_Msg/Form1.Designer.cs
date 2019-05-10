@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.gpOption1 = new System.Windows.Forms.GroupBox();
-            this.gpOption2 = new System.Windows.Forms.GroupBox();
-            this.rbOk = new System.Windows.Forms.RadioButton();
-            this.rbOkCancel = new System.Windows.Forms.RadioButton();
             this.rbYesNo = new System.Windows.Forms.RadioButton();
+            this.rbOkCancel = new System.Windows.Forms.RadioButton();
+            this.rbOk = new System.Windows.Forms.RadioButton();
+            this.gpOption2 = new System.Windows.Forms.GroupBox();
             this.rbQuestion = new System.Windows.Forms.RadioButton();
             this.rbInformation = new System.Windows.Forms.RadioButton();
             this.rbError = new System.Windows.Forms.RadioButton();
@@ -55,6 +55,39 @@
             this.gpOption1.TabStop = false;
             this.gpOption1.Text = "Type";
             // 
+            // rbYesNo
+            // 
+            this.rbYesNo.AutoSize = true;
+            this.rbYesNo.Location = new System.Drawing.Point(7, 65);
+            this.rbYesNo.Name = "rbYesNo";
+            this.rbYesNo.Size = new System.Drawing.Size(60, 22);
+            this.rbYesNo.TabIndex = 2;
+            this.rbYesNo.TabStop = true;
+            this.rbYesNo.Text = "YesNo";
+            this.rbYesNo.UseVisualStyleBackColor = true;
+            // 
+            // rbOkCancel
+            // 
+            this.rbOkCancel.AutoSize = true;
+            this.rbOkCancel.Location = new System.Drawing.Point(7, 43);
+            this.rbOkCancel.Name = "rbOkCancel";
+            this.rbOkCancel.Size = new System.Drawing.Size(80, 22);
+            this.rbOkCancel.TabIndex = 1;
+            this.rbOkCancel.TabStop = true;
+            this.rbOkCancel.Text = "OkCancel";
+            this.rbOkCancel.UseVisualStyleBackColor = true;
+            // 
+            // rbOk
+            // 
+            this.rbOk.AutoSize = true;
+            this.rbOk.Location = new System.Drawing.Point(7, 21);
+            this.rbOk.Name = "rbOk";
+            this.rbOk.Size = new System.Drawing.Size(42, 22);
+            this.rbOk.TabIndex = 0;
+            this.rbOk.TabStop = true;
+            this.rbOk.Text = "Ok";
+            this.rbOk.UseVisualStyleBackColor = true;
+            // 
             // gpOption2
             // 
             this.gpOption2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
@@ -68,39 +101,6 @@
             this.gpOption2.TabIndex = 1;
             this.gpOption2.TabStop = false;
             this.gpOption2.Text = "Icon";
-            // 
-            // rbOk
-            // 
-            this.rbOk.AutoSize = true;
-            this.rbOk.Location = new System.Drawing.Point(7, 21);
-            this.rbOk.Name = "rbOk";
-            this.rbOk.Size = new System.Drawing.Size(42, 22);
-            this.rbOk.TabIndex = 0;
-            this.rbOk.TabStop = true;
-            this.rbOk.Text = "Ok";
-            this.rbOk.UseVisualStyleBackColor = true;
-            // 
-            // rbOkCancel
-            // 
-            this.rbOkCancel.AutoSize = true;
-            this.rbOkCancel.Location = new System.Drawing.Point(7, 43);
-            this.rbOkCancel.Name = "rbOkCancel";
-            this.rbOkCancel.Size = new System.Drawing.Size(80, 22);
-            this.rbOkCancel.TabIndex = 1;
-            this.rbOkCancel.TabStop = true;
-            this.rbOkCancel.Text = "OkCancel";
-            this.rbOkCancel.UseVisualStyleBackColor = true;
-            // 
-            // rbYesNo
-            // 
-            this.rbYesNo.AutoSize = true;
-            this.rbYesNo.Location = new System.Drawing.Point(7, 65);
-            this.rbYesNo.Name = "rbYesNo";
-            this.rbYesNo.Size = new System.Drawing.Size(60, 22);
-            this.rbYesNo.TabIndex = 2;
-            this.rbYesNo.TabStop = true;
-            this.rbYesNo.Text = "YesNo";
-            this.rbYesNo.UseVisualStyleBackColor = true;
             // 
             // rbQuestion
             // 
@@ -145,6 +145,7 @@
             this.btnShow.TabIndex = 2;
             this.btnShow.Text = "Show";
             this.btnShow.UseVisualStyleBackColor = false;
+            this.btnShow.Click += new System.EventHandler(this.btnShow_Click);
             // 
             // Form1
             // 
